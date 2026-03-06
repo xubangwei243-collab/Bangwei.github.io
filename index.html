@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangwei Xu | Quant, ML & Geospatial AI</title>
+  <meta name="description" content="Portfolio of Bangwei Xu – Cornell M.S. candidate specialising in quantitative research, machine learning and geospatial AI." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Live Ticker Bar -->
+  <div class="ticker">
+    <div class="ticker-wrap">
+      <span>PYTHON • JAX • PYTORCH • CUDA • SQL • SAR • MARL • 4.0 GPA • CORNELL •</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">BX</span>
+        <span class="brand-text">
+          <strong>Bangwei Xu</strong>
+          <small>Quant · ML · Geospatial</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section with interactive background -->
+    <section class="hero section reveal">
+      <!-- Vanta.js background container -->
+      <div id="hero-bg" class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Cornell M.S. Candidate · Quant & ML</p>
+          <h1>Building high‑performance systems with elegant simplicity.</h1>
+          <p class="lead">
+            I’m <strong>Bangwei Xu</strong>, a data scientist and quantitative researcher focused on turning complex modelling into clear, effective solutions. My work spans risk modelling, recommender optimisation, geospatial AI and multi‑agent reinforcement learning.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Let’s Connect</a>
+            <a class="btn btn-secondary" href="assets/Bangwei_Xu_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+        <aside class="hero-panel stats-panel">
+          <article class="stat-card">
+            <canvas id="chartGPA" width="60" height="60"></canvas>
+            <div class="stat-info">
+              <span class="stat-label">GPA</span>
+              <span class="stat-value">4.0</span>
+            </div>
+          </article>
+          <article class="stat-card">
+            <!-- Pulse icon for LOB messages -->
+            <span class="pulse-icon"></span>
+            <div class="stat-info">
+              <span class="stat-label">LOB Messages</span>
+              <span class="stat-value">400M+</span>
+            </div>
+          </article>
+          <article class="stat-card">
+            <canvas id="chartFalseAlarm" width="60" height="60"></canvas>
+            <div class="stat-info">
+              <span class="stat-label">False Alarms</span>
+              <span class="stat-value">41% ↓</span>
+            </div>
+          </article>
+          <article class="stat-card">
+            <canvas id="chartEnvs" width="60" height="60"></canvas>
+            <div class="stat-info">
+              <span class="stat-label">Parallel Envs</span>
+              <span class="stat-value">4,096</span>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Profile</h2>
+        </div>
+        <div class="content-card">
+          <p>
+            I’m currently pursuing an M.S. in Data Science & Applied Statistics at Cornell University. Previously, I completed a B.A. in Mathematics from the University of Washington. My work spans risk modelling, neural calibration, multi‑objective recommendation and large‑scale reinforcement learning.
+          </p>
+          <p>
+            I’m particularly drawn to roles where rigorous mathematics meets user‑centric design—creating systems that are both powerful and intuitive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section reveal">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Professional</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <div>
+                <h3>Machine Learning Intern</h3>
+                <p class="meta">Ursa Space Systems · Ithaca, NY · Dec 2025–Present</p>
+              </div>
+            </div>
+            <ul>
+              <li>Reduced SAR-based vessel-detection false positives by introducing hard negative mining and focal-loss reweighting, lowering false-alarm rate from 11.6% to 6.8%.</li>
+              <li>Built multi-source data fusion pipelines combining multi-polarisation SAR features with auxiliary layers (elevation, incidence angle), boosting F1 from 0.75 to 0.81 on unseen geographies.</li>
+              <li>Translated mission requirements into measurable KPIs and delivered validation reports across 50,000+ km² of satellite coverage.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <div>
+                <h3>Quantitative Analyst Intern</h3>
+                <p class="meta">UBS · Shanghai, China · Jun 2024–Sep 2024</p>
+              </div>
+            </div>
+            <ul>
+              <li>Migrated multi-product VaR frameworks into a unified Python stack (Pandas, NumPy, Numba), cutting back-testing runtime by 40%.</li>
+              <li>Prototyped LLM-driven risk-report generation, synthetic stress-test samplers, AI trade surveillance and neural curve calibration with 15% lower forecasting error versus Nelson–Siegel benchmarks.</li>
+              <li>Developed GNN and transformer-based models to detect anomalous trading patterns and behavioural deviations.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Pareto-Based Multi-Objective Recommender System</h3>
+            <p class="meta">Research Assistant · Remote · Jan 2024–Sep 2024</p>
+            <p>Developed a multi-objective optimisation framework using MGDA and Frank–Wolfe to balance ranking accuracy and content freshness.</p>
+            <ul>
+              <li>Designed experiments to analyse heterogeneous treatment effects across user segments.</li>
+              <li>Supported A/B testing on WeChat Channels, boosting GMV by +1.45%, CTR by +0.89% and reducing FastSlipRate by −0.63%.</li>
+            </ul>
+            <div class="tag-row"><span class="tag">Recommender</span><span class="tag">Optimisation</span><span class="tag">A/B Testing</span></div>
+          </article>
+          <article class="project-card">
+            <h3>GPU‑Accelerated MARL for High-Frequency Trading</h3>
+            <p class="meta">Research Project · Ithaca, NY · Jul 2025–Present</p>
+            <p>Built a JAX‑based multi‑agent RL pipeline (vmap + JIT) for large‑scale simulation on historical limit order book data.</p>
+            <ul>
+              <li>Scaled to 4,096 parallel environments over 400M+ AMZN messages.</li>
+              <li>Designed inventory-aware reward functions and discrete action spaces to reduce slippage by up to 0.2 ticks versus TWAP.</li>
+            </ul>
+            <div class="tag-row"><span class="tag">MARL</span><span class="tag">JAX</span><span class="tag">Trading</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Skills -->
+    <section id="education" class="section reveal">
+      <div class="container two-col">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Academic background</h2>
+          </div>
+          <article class="edu-card">
+            <h3>Cornell University</h3>
+            <p class="meta">M.S. Data Science & Applied Statistics · Dec 2026</p>
+            <p><strong>GPA:</strong> 4.0</p>
+          </article>
+          <article class="edu-card">
+            <h3>University of Washington</h3>
+            <p class="meta">B.A. Mathematics · Jun 2025</p>
+            <p><strong>GPA:</strong> 3.7</p>
+          </article>
+        </div>
+        <div id="skills">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Technical toolkit</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card"><h3>Programming</h3><p>Python, SQL, R, SAS, MATLAB, LaTeX</p></article>
+            <article class="skill-card"><h3>Libraries & Tools</h3><p>Pandas, NumPy, Numba, JAX, Tableau, Excel</p></article>
+            <article class="skill-card"><h3>ML & Stats</h3><p>Machine Learning, Statistical Inference, Data Mining, Deep Learning</p></article>
+            <article class="skill-card"><h3>Languages</h3><p>English (fluent), Chinese (native)</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Get in touch</h2>
+            <p>I’m open to opportunities in quantitative research, machine learning and geospatial AI.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:Bancroft1016@163.com">Email me</a>
+            <a class="btn btn-secondary" href="assets/Bangwei_Xu_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Bangwei Xu</p>
+      <p>Crafted with a love for data and design.</p>
+    </div>
+  </footer>
+
+  <!-- External Libraries for interactive effects -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
